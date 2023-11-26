@@ -1,0 +1,74 @@
+*,html {
+    padding: 0;
+    margin: 0;
+}
+
+.container1 {
+    display: flex;
+    max-width: 800px;
+    background-color: #ddd;
+    margin: 50px auto;
+    padding: 20px ;
+    line-height: 30px;
+    box-sizing: border-box;
+}
+
+.konten_utama {
+    flex: 3;
+    order: 2;
+}
+
+.sidebar1 {
+    flex: 1;
+    order: 1;
+}
+
+.sidebar2 {
+    padding: 20px;
+    flex: 2;
+    order: 3;
+    box-sizing: border-box;
+}
+
+.container2 {
+    display: flex;
+    margin: 50px auto;
+    max-width: 800px;
+    justify-content: space-between;
+}
+
+.layanan-1 {
+    flex-shrink: 3;
+    background-color: blue;
+    margin: 20px;
+    padding: 20px;
+    width: 30%;
+}
+
+.layanan-2 {
+    background-color: red;
+    padding: 20px;
+    margin: 20px;
+    width: 30%;
+}
+
+.layanan-3 {
+    padding: 20px;
+    margin: 20px;
+    width: 30%;
+    background-color: aquamarine;
+}
+
+@media (max-width: 800px) {
+    .container1, .container2 {
+        width: 500px;
+    }
+
+    .sidebar1 {
+        margin-right: 10px;
+    }
+
+    .sidebar2 {
+        flex: 1;
+    }
+}
